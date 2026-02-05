@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Aggregee">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAACAAAAAAAAgAAAA=</HashCode>
+      <FileName>Aggregate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aggregate">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAQAACAAAAAAIAAAAgAAAAAAA=</HashCode>
+      <FileName>Aggregate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MoveOnly" Collapsed="true">
+    <Position X="4.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABCAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Aggregate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Component">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAQAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Composite.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Composite">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAABAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Composite.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CopyOnly" Collapsed="true">
+    <Position X="4.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Composite.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NoMove" Collapsed="true">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Composite.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

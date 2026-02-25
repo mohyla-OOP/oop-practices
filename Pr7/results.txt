@@ -1,0 +1,21 @@
+first 
+second 
+third 
+ 
+ 
+ 
+1 
+2 
+3 
+ array copy:  3.3252
+       move:  2.8935
+ vector copy: 6.1192
+        move: 0.6489
+ array copy:  526.01
+       move:  544.564
+ vector copy: 567.727
+        move: 1.4061
+ array copy:  732.639
+       move:  358.131
+ vector copy: 821.815
+        move: 0.7018

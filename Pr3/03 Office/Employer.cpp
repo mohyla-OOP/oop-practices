@@ -1,67 +1,46 @@
 
 #include <iostream>
 using namespace std;
+#include "Accountant.h"
+#include "Employee.h"
+#include "Employer.h"
 #include "Person.h"
 #include "Position.h"
-#include "Employer.h"
-#include "Employee.h"
-#include "Accountant.h"
 
-
-
-Employer::Employer(const Person & boss, const int volume, const Person & accountant):
-	_me(boss),_volume(volume)
+Employer::Employer(const Person &boss, const int volume, const Person &accountant) : _me(boss), _volume(volume)
 {
-	cout<<"Employer "<<_me.getName()<<" with "<<_volume<<" positions was created"<<endl;
-	_office = new Staff[_volume];
-	for(int i=0; i< _volume; i++)
-		_office[i]._free = true;
+  cout << "Employer " << _me.getName() << " with " << _volume << " positions was created" << endl;
+  _office = new Staff[_volume];
+  for (int i = 0; i < _volume; i++) _office[i]._free = true;
 
-	_accountant = new Accountant(*this, accountant);
+  _accountant = new Accountant(*this, accountant);
 }
 
 Employer::~Employer()
 {
-	cout<<"Employer "<<_me.getName()<<" with "<<_volume<<" positions was deleted"<<endl;
-	delete [] _office;
-	delete    _accountant;
+  cout << "Employer " << _me.getName() << " with " << _volume << " positions was deleted" << endl;
+  delete[] _office;
+  delete _accountant;
 }
 
-void Employer::hire(const Person & person, const Position & position)
+void Employer::hire(const Person &person, const Position &position)
 {
-	Employee * pemployee = new Employee (person, position);
-	int i=0;
-	while ((i<_volume) && (!_office[i]._free))
-		 i++;
-	_office[i]._free = false;
-	_office[i]._pemployee = pemployee;
+  Employee *pemployee = new Employee(person, position);
+  int i = 0;
+  while ((i < _volume) && (!_office[i]._free)) i++;
+  _office[i]._free = false;
+  _office[i]._pemployee = pemployee;
 };
-void Employer::fire(const int i)
-{
-//	to be developed
+void Employer::fire(const int i) {
+  //	to be developed
 };
 
-void Employer::pay() const
-{
-	_accountant->payroll();
-}
+void Employer::pay() const { _accountant->payroll(); }
 
-const Accountant & Employer::myAccountant()
-{
-	return *_accountant;
-}
+const Accountant &Employer::myAccountant() { return *_accountant; }
 
-Employer::Staff& Employer::getPosition(int i)
-{
-	return _office[i];
-}
+Employer::Staff &Employer::getPosition(int i) { return _office[i]; }
 
-bool Employer::free(int i) const
-{
-	return _office[i]._free;
-}
+bool Employer::free(int i) const { return _office[i]._free; }
 
-const Employee& Employer::_pemployee(int i) const
-{
-	return *_office[i]._pemployee;
-}
+const Employee &Employer::_pemployee(int i) const { return *_office[i]._pemployee; }

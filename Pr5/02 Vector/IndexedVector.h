@@ -2,28 +2,29 @@
 // Develop operator+= as an utility or class member?
 #include <iostream>
 using namespace std;
-#include  <vector>
+#include <vector>
 
 class IndexedWrappedVector
 {
-private:
-	static const size_t _n;
-	double * _v;
-public:
-	IndexedWrappedVector();
-	IndexedWrappedVector(const IndexedWrappedVector&);
-	~IndexedWrappedVector();
-	size_t size() const { return _n;}
-	IndexedWrappedVector& operator=(const IndexedWrappedVector&);
+ private:
+  static const size_t _n;
+  double *_v;
 
-	double operator[](size_t) const;
-	double& operator[](size_t);
+ public:
+  IndexedWrappedVector();
+  IndexedWrappedVector(const IndexedWrappedVector &);
+  ~IndexedWrappedVector();
+  size_t size() const { return _n; }
+  IndexedWrappedVector &operator=(const IndexedWrappedVector &);
+
+  double operator[](size_t) const;
+  double &operator[](size_t);
 };
-	ostream& operator<<(ostream&, const IndexedWrappedVector&);
-	void fill(IndexedWrappedVector& v);
-	bool operator==(const IndexedWrappedVector&, const IndexedWrappedVector&);
-	bool operator!=(const IndexedWrappedVector&, const IndexedWrappedVector&);
-	double operator*(const IndexedWrappedVector&,const IndexedWrappedVector&);
-	const IndexedWrappedVector operator*(double, const IndexedWrappedVector&);
-	const IndexedWrappedVector operator*( const IndexedWrappedVector&, double);
-	const IndexedWrappedVector operator+(const IndexedWrappedVector&,const IndexedWrappedVector&);
+ostream &operator<<(ostream &, const IndexedWrappedVector &);
+void fill(IndexedWrappedVector &v);
+bool operator==(const IndexedWrappedVector &, const IndexedWrappedVector &);
+bool operator!=(const IndexedWrappedVector &, const IndexedWrappedVector &);
+double operator*(const IndexedWrappedVector &, const IndexedWrappedVector &);
+const IndexedWrappedVector operator*(double, const IndexedWrappedVector &);
+const IndexedWrappedVector operator*(const IndexedWrappedVector &, double);
+const IndexedWrappedVector operator+(const IndexedWrappedVector &, const IndexedWrappedVector &);

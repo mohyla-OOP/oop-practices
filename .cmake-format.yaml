@@ -1,0 +1,17 @@
+format:
+  line_width: 110
+  tab_size: 2
+  use_tabchars: false
+  max_pargs_hwrap: 4
+  max_subgroups_hwrap: 2
+  dangle_align: 'prefix'
+  dangle_parens: True
+  enable_sort: True
+  autosort: False
+  keyword_case: 'upper'
+  command_case: 'lower'
+
+
+lint:
+  disabled_codes:
+    - C0327   # wrong line ending

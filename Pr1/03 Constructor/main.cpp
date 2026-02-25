@@ -4,11 +4,11 @@ using namespace std;
 
 int main()
 {
-	Complex z1(1, 1);
-	Complex z2(2);
-	Complex z3;
-	TComplex t1(1, 1);
-	TComplex t2(2);
-	TComplex t3;
-	return 0;
+  Complex z1(1, 1);
+  Complex z2(2);
+  Complex z3;
+  TComplex t1(1, 1);
+  TComplex t2(2);
+  TComplex t3;
+  return 0;
 }

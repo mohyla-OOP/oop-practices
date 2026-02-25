@@ -8,18 +8,17 @@ class Person;
 
 class Accountant
 {
-private:
-	const Employer & _myEmployer;
-	const Person & _who;
-	Accountant& operator=(const Accountant&);
+ private:
+  const Employer &_myEmployer;
+  const Person &_who;
+  Accountant &operator=(const Accountant &);
 
-public:
-	Accountant (const Employer & , const Person &);
-	Accountant (const Accountant&);
-	~Accountant ();
-	void payroll() const;
-	void payroll (const Employee &) const;
+ public:
+  Accountant(const Employer &, const Person &);
+  Accountant(const Accountant &);
+  ~Accountant();
+  void payroll() const;
+  void payroll(const Employee &) const;
 };
 
 #endif
-	

@@ -1,104 +1,88 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
 using namespace std;
 
 #include "Vector.h"
 
 const size_t WrappedVector::_n = 5;
 
-WrappedVector::WrappedVector():
-	_v (new double[_n])
-{	
-	fill();
-	return;
-}
-
-WrappedVector::WrappedVector(const WrappedVector& vec):
-	_v (new double[_n])
-{	
-	if (_v==0)
-	{
-		char * mes = "No more space in the system";
-		throw mes;
-	}
-	for (size_t i=0; i<_n; i++)
-		_v[i] = vec._v[i];
-	return;
-}
-
-WrappedVector& WrappedVector::operator=(const WrappedVector& vec)
+WrappedVector::WrappedVector() : _v(new double[_n])
 {
-	for (size_t i=0; i<_n; i++)
-		_v[i] = vec._v[i];
-	return *this;
+  fill();
+  return;
+}
+
+WrappedVector::WrappedVector(const WrappedVector &vec) : _v(new double[_n])
+{
+  if (_v == 0)
+  {
+    char *mes = "No more space in the system";
+    throw mes;
+  }
+  for (size_t i = 0; i < _n; i++) _v[i] = vec._v[i];
+  return;
+}
+
+WrappedVector &WrappedVector::operator=(const WrappedVector &vec)
+{
+  for (size_t i = 0; i < _n; i++) _v[i] = vec._v[i];
+  return *this;
 }
 
 WrappedVector::~WrappedVector()
 {
-	delete [] _v;
-	_v = 0;
-	return;
+  delete[] _v;
+  _v = 0;
+  return;
 }
 
-bool WrappedVector::operator==(const WrappedVector& v)const
+bool WrappedVector::operator==(const WrappedVector &v) const
 {
-	bool res = true;
-	for (size_t i=0;i<size(); i++)
-		res = res && (_v[i]==v._v[i]);
-	return res;
+  bool res = true;
+  for (size_t i = 0; i < size(); i++) res = res && (_v[i] == v._v[i]);
+  return res;
 }
 
-bool WrappedVector::operator!=(const WrappedVector& v)const
+bool WrappedVector::operator!=(const WrappedVector &v) const { return !(*this == v); }
+
+double WrappedVector::operator*(const WrappedVector &v) const
 {
-	return !(*this == v);
+  double res = 0;
+  for (size_t i = 0; i < size(); i++) res += _v[i] * v._v[i];
+  return res;
 }
 
-double WrappedVector::operator*(const WrappedVector& v)const
+const WrappedVector WrappedVector::operator*(double x) const
 {
-	double res =0;
-	for (size_t i=0;i<size(); i++)
-		res += _v[i]*v._v[i];
-	return res;
+  WrappedVector res;
+  for (size_t i = 0; i < size(); i++) res._v[i] = _v[i] * x;
+  return res;
 }
 
-const WrappedVector WrappedVector::operator*(double x)const
+const WrappedVector WrappedVector::operator+(const WrappedVector &v) const
 {
-	WrappedVector res;
-	for (size_t i=0;i<size(); i++)
-		res._v[i]= _v[i]*x;
-	return res;
+  WrappedVector res;
+  for (size_t i = 0; i < size(); i++) res._v[i] = _v[i] + v._v[i];
+  return res;
 }
 
-const WrappedVector WrappedVector::operator+(const WrappedVector& v) const
+ostream &WrappedVector::show(ostream &os) const
 {
-	WrappedVector res;
-	for (size_t i=0;i<size(); i++)
-		res._v[i] = _v[i]+v._v[i];
-	return res;
+  char ch = '(';
+  for (size_t i = 0; i < size(); i++)
+  {
+    os << ch << _v[i];
+    ch = ',';
+  }
+  os << ')' << endl;
+
+  return os;
 }
 
-ostream& WrappedVector::show(ostream& os)const
-{
-	char ch ='(';
-	for (size_t i=0; i<size(); i++)
-	{
-		os<<ch<<_v[i];
-		ch =',';
-	}
-	os<<')'<<endl;
-
-	return os;
-}
-
-ostream& operator<<(ostream& os, const WrappedVector& u)
-{
-	return u.show(os);
-}
+ostream &operator<<(ostream &os, const WrappedVector &u) { return u.show(os); }
 
 void WrappedVector::fill()
 {
-	for (size_t i=0; i<size();++i)
-		_v[i] = rand();
-	return;
+  for (size_t i = 0; i < size(); ++i) _v[i] = rand();
+  return;
 }
-

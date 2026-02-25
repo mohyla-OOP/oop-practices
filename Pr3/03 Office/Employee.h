@@ -8,18 +8,19 @@ class Employer;
 
 class Employee
 {
-friend class Employer;
+  friend class Employer;
 
-private:
-	const Person & _who;
-	const Position & _what;
-	Employee(const Person & who, const Position & what);
-	Employee(const Employee&);
-	~Employee();
-	Employee& operator=(const Employee&);
-public:
-	const Person& who() const;
-	const Position& what() const;
+ private:
+  const Person &_who;
+  const Position &_what;
+  Employee(const Person &who, const Position &what);
+  Employee(const Employee &);
+  ~Employee();
+  Employee &operator=(const Employee &);
+
+ public:
+  const Person &who() const;
+  const Position &what() const;
 };
 
 #endif

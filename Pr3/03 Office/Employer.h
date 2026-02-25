@@ -10,34 +10,35 @@ class Employee;
 
 class Employer
 {
-	friend void Accountant::payroll(const Employee &) const;
-	friend void Accountant::payroll() const;
-private:
-	struct Staff
-	{
-		Employee * _pemployee;
-		bool _free;
-	};
-	Accountant * _accountant;
-	const Person & _me;
+  friend void Accountant::payroll(const Employee &) const;
+  friend void Accountant::payroll() const;
 
-	int _volume;
-	// pimpl
-	Staff * _office;
+ private:
+  struct Staff
+  {
+    Employee *_pemployee;
+    bool _free;
+  };
+  Accountant *_accountant;
+  const Person &_me;
 
-	Employer& operator=(const Employer&) = delete;
-	Employer(const Employer&) = delete;
+  int _volume;
+  // pimpl
+  Staff *_office;
 
-public:
-	Employer(const Person & employer, const int volume, const Person & accountant);
-	~Employer();
-	const Accountant & myAccountant();
-	void hire(const Person &, const Position &);
-	Staff& getPosition(int i);
-	bool free(int i) const;
-	const Employee& _pemployee(int i) const;
-	void fire(const int);
-	void pay() const;
+  Employer &operator=(const Employer &) = delete;
+  Employer(const Employer &) = delete;
+
+ public:
+  Employer(const Person &employer, const int volume, const Person &accountant);
+  ~Employer();
+  const Accountant &myAccountant();
+  void hire(const Person &, const Position &);
+  Staff &getPosition(int i);
+  bool free(int i) const;
+  const Employee &_pemployee(int i) const;
+  void fire(const int);
+  void pay() const;
 };
 
 #endif

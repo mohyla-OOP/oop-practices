@@ -5,15 +5,15 @@
 
 class Person
 {
-public:
-	const string& getName() const;
-	explicit Person(const char []);
-	Person(const Person&);
-	~Person();
-private:
-	string _name;
-	Person& operator=(const Person &);
+ public:
+  const string &getName() const;
+  explicit Person(const char[]);
+  Person(const Person &);
+  ~Person();
 
+ private:
+  string _name;
+  Person &operator=(const Person &);
 };
 
 #endif

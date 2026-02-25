@@ -16,19 +16,20 @@ using namespace std;
 
 class Vector
 {
-private:
-	int _n;
-	double* _v;
-public:
-	Vector(int);
-	~Vector();
-	int size() const { return _n; }
-	double operator[](int i);
-	const double operator[] (int i) const;
+ private:
+  int _n;
+  double *_v;
+
+ public:
+  Vector(int);
+  ~Vector();
+  int size() const { return _n; }
+  double operator[](int i);
+  const double operator[](int i) const;
 };
 
-	bool operator==(const Vector&, const Vector&);
-	bool operator!=(const Vector&, const Vector&);
+bool operator==(const Vector &, const Vector &);
+bool operator!=(const Vector &, const Vector &);
 
-	ostream& operator<<(ostream&, const Vector&);
-	istream& operator>>(istream&, Vector&);
+ostream &operator<<(ostream &, const Vector &);
+istream &operator>>(istream &, Vector &);

@@ -2,9 +2,6 @@
 
 class A::B
 {
-public:
-	void f(double x)
-	{
-		x;
-	}
+ public:
+  void f(double x) { x; }
 };

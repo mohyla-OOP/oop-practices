@@ -1,8 +1,8 @@
 #ifndef _TRIANGLE_H_
 #define _TRIANGLE_H_
 
-#include <iostream>
 #include <fstream>
+#include <iostream>
 using namespace std;
 
 // Version 0.1
@@ -12,36 +12,32 @@ using namespace std;
 // for sides and medians
 class Triangle
 {
-private:
-	static ofstream out;
-	static int _call;
-	Point _a, _b, _c;
+ private:
+  static ofstream out;
+  static int _call;
+  Point _a, _b, _c;
 
-public:
-	Triangle(const double x1=0, const double y1=0,
-		const double x2=1, const double y2=0,
-		const double x3=0, const double y3=1);
-	Triangle(const Point &a,
-		const Point& b, 
-		const Point& c);
-	Triangle (const Triangle&);
-	~Triangle();
-	Triangle& operator= (const Triangle&);
-	double perimeter() const;
-	double area() const;
+ public:
+  Triangle(const double x1 = 0, const double y1 = 0, const double x2 = 1, const double y2 = 0, const double x3 = 0, const double y3 = 1);
+  Triangle(const Point &a, const Point &b, const Point &c);
+  Triangle(const Triangle &);
+  ~Triangle();
+  Triangle &operator=(const Triangle &);
+  double perimeter() const;
+  double area() const;
 
-	const Point& apexA() const;
-	const Point& apexB() const;
-	const Point& apexC() const;
+  const Point &apexA() const;
+  const Point &apexB() const;
+  const Point &apexC() const;
 
-	const Segment side_a() const;
-	const Segment side_b() const;
-	const Segment side_c() const;
+  const Segment side_a() const;
+  const Segment side_b() const;
+  const Segment side_c() const;
 
-	static int epilog();
+  static int epilog();
 
-	ostream& show (ostream & os) const;
+  ostream &show(ostream &os) const;
 };
 
-ostream& operator<<(ostream &, const Triangle &);
+ostream &operator<<(ostream &, const Triangle &);
 #endif

@@ -2,21 +2,19 @@
 #include <iostream>
 
 #if 1
-struct Point { 
-    double _x=0, _y=0;
-  
-    double dist(Point other) const {
-        return hypot(_x - other._x, _y - other._y);
-    }
+struct Point
+{
+  double _x = 0, _y = 0;
+
+  double dist(Point other) const { return hypot(_x - other._x, _y - other._y); }
 };
 
-double dist(Point a, Point b) {
-    return hypot(a._x - b._x, a._y - b._y);
-}
-int main() {
-    Point u, v;
-    auto d = dist(u, v);
-    d = u.dist(v);
+double dist(Point a, Point b) { return hypot(a._x - b._x, a._y - b._y); }
+int main()
+{
+  Point u, v;
+  auto d = dist(u, v);
+  d = u.dist(v);
 }
 #endif
 #if 0

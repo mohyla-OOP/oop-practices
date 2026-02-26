@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CList">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <NestedTypes>
+      <Struct Name="CList::Node" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ConcreteList.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAEABAQBAAA=</HashCode>
+      <FileName>ConcreteList.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Foo">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAIAAAAAAAAABgAAgAAAA=</HashCode>
+      <FileName>Foo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TList&lt;Item&gt;">
+    <Position X="2.25" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="TList&lt;Item&gt;::Node" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TemplateList.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAEAAAQBABA=</HashCode>
+      <FileName>TemplateList.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="List&lt;Item, DeletePolicy&lt;&gt;&gt;">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="List&lt;Item, DeletePolicy&lt;&gt;&gt;::Node" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>List.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAEAAAQBAAI=</HashCode>
+      <FileName>List.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="NoDeletePolicy&lt;T&gt;">
+    <Position X="7" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>DeletePolicy.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="PtrDeletePolicy&lt;T&gt;">
+    <Position X="8.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>DeletePolicy.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ArrayDeletePolicy&lt;T&gt;">
+    <Position X="5.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>DeletePolicy.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="Item" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConcreteList.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

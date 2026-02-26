@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Calc&lt;Arithm&gt;">
+    <Position X="3.25" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Typedef Name="Calc&lt;Arithm&gt;::ArOpPtr" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TemplateCalc.H</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAIAAAAQAAQAAIEAAAAAAAAAAAAAAAAAEAAACA=</HashCode>
+      <FileName>TemplateCalc.H</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="T&lt;T&gt;">
+    <Position X="1.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Complex.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Complex">
+    <Position X="5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAEAAAAAJABAAAgECAAAAAACAgAAAAAAA=</HashCode>
+      <FileName>Complex.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wrapper&lt;Type&gt;">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAgAIAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Wrapper.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Typedef Name="CPFR" Collapsed="true">
+    <Position X="1.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Complex.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PFR" Collapsed="true">
+    <Position X="1.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Complex.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

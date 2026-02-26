@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Array&lt;ArrayElem&gt;">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Array&lt;ArrayElem&gt;::BadArray" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Array.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAACAAAAIAAAAAAAAEAAABAAAAgAAIAAAA=</HashCode>
+      <FileName>Array.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SingleList&lt;ListItem&gt;">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="SingleList&lt;ListItem&gt;::BadList" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>List.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Struct Name="SingleList&lt;ListItem&gt;::ListNode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>List.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAABAAAAEAEAAAAAAAAAAAAAACAAAAACBQQA=</HashCode>
+      <FileName>List.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StackAgregatingArray&lt;Elem&gt;">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="StackAgregatingArray&lt;Elem&gt;::BadStack" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>StackAggregating.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAkAAAAAAAACAAAAAIAAAogCAAACgAAAAAAIAAACAAA=</HashCode>
+      <FileName>StackAggregating.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StackOnList&lt;Elem&gt;">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="StackOnList&lt;Elem&gt;::BadStack" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>StackOnList.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAIAEAIgCAAAAAAAQAAAIAAIAAAA=</HashCode>
+      <FileName>StackOnList.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

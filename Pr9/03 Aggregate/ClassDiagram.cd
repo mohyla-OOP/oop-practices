@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ShadowMakerNoAssignConst" Collapsed="true">
+    <Position X="0.75" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAIAABAAAAAAAAAAAAAAAAIAQAAIAI=</HashCode>
+      <FileName>Header.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShadowMakerAss" Collapsed="true">
+    <Position X="5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAIACAAAAAAAAAAAAAAAAAgAQAAIAA=</HashCode>
+      <FileName>Shadow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShadowMakerDerivedAss" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAiAAAACgA=</HashCode>
+      <FileName>Shadow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShadowMakerNoAss" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAIAAAAAAAEAAAAAAAAAAAAAQAAIAA=</HashCode>
+      <FileName>Shadow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShadowMakerDerivedNoAss" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAACgA=</HashCode>
+      <FileName>Shadow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PShadowMakerDerivedAss" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAEAAAACAAAAIAAAAAAAAAAAAAAAAAAAgAQAACgA=</HashCode>
+      <FileName>ShadowPrivate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShadowMakerCompAss" Collapsed="true">
+    <Position X="6.5" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAICAAAAIAAAAAAAAAAAAAAAAAAAgAQAACgA=</HashCode>
+      <FileName>ShadowPrivate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShadowMakerAggrAss" Collapsed="true">
+    <Position X="3.75" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAAAAAACAAAAIAAAAAAAAAAAAAAAAAAAgAQAADgA=</HashCode>
+      <FileName>ShadowPrivate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShadowMakerAggr2Ass" Collapsed="true">
+    <Position X="3.75" Y="4" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AKAAAAEAAAAAAAAIAAAEAAAABAAAAAAAAAAgAQCgCAA=</HashCode>
+      <FileName>ShadowPrivate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

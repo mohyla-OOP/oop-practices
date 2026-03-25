@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Array&lt;ArrayElem&gt;" Collapsed="true">
+    <Position X="1" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAACAAAAIAAAQAAAAEAAABAAAAgAAIAAAA=</HashCode>
+      <FileName>Array.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StackAgregatingArray&lt;Elem&gt;" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <InheritanceLine Type="Stack&lt;StackElem&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="5.25" Y="1.312" />
+        <Point X="5.628" Y="1.312" />
+        <Point X="5.628" Y="1.942" />
+        <Point X="7.75" Y="1.942" />
+        <Point X="7.75" Y="2.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>QAkAAAAAAAACAAAAAIAAAogCAAACAAAAAAAIAAACAAA=</HashCode>
+      <FileName>Bounded.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StackDerivedArray&lt;Elem&gt;" Collapsed="true">
+    <Position X="1" Y="2.5" Width="1.5" />
+    <InheritanceLine Type="Array&lt;ArrayElem&gt;">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.719" Y="0.1" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <InheritanceLine Type="Stack&lt;StackElem&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="5.25" Y="1.312" />
+        <Point X="4.555" Y="1.312" />
+        <Point X="4.555" Y="1.939" />
+        <Point X="2.794" Y="1.939" />
+        <Point X="2.794" Y="2.5" />
+        <Point X="1.75" Y="2.5" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.486" Y="0.1" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAACAAIAAAogCAAACAAAAAAAIAAACABA=</HashCode>
+      <FileName>Derived.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PeekBack&lt;Elem&gt;" Collapsed="true">
+    <Position X="8" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Peekback.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PeekbackStack&lt;Elem&gt;" Collapsed="true">
+    <Position X="8" Y="3.75" Width="1.5" />
+    <InheritanceLine Type="PeekBack&lt;Elem&gt;">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.29" Y="0.133" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <InheritanceLine Type="Stack&lt;StackElem&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="5.25" Y="1.312" />
+        <Point X="5.872" Y="1.312" />
+        <Point X="5.872" Y="1.708" />
+        <Point X="8.667" Y="1.708" Type="JumpStart" />
+        <Point X="8.833" Y="1.708" Type="JumpEnd" />
+        <Point X="9.018" Y="1.708" />
+        <Point X="9.018" Y="3.75" />
+        <Point X="8.75" Y="3.75" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.508" Y="0.145" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAI=</HashCode>
+      <FileName>Peekback.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgregatingPeekbackStack&lt;Elem&gt;" Collapsed="true">
+    <Position X="8" Y="5.5" Width="1.5" />
+    <InheritanceLine Type="StackAgregatingArray&lt;Elem&gt;">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.329" Y="0.06" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <InheritanceLine Type="PeekbackStack&lt;Elem&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="8.75" Y="4.57" />
+        <Point X="9.125" Y="4.57" />
+        <Point X="9.125" Y="5.5" />
+        <Point X="8.75" Y="5.5" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.487" Y="0.079" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Peekback.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DerivedPeekbackStack&lt;Elem&gt;" Collapsed="true">
+    <Position X="1" Y="5.5" Width="1.5" />
+    <InheritanceLine Type="PeekbackStack&lt;Elem&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="8.75" Y="4.57" />
+        <Point X="8.75" Y="4.646" />
+        <Point X="7.833" Y="4.646" Type="JumpStart" />
+        <Point X="7.667" Y="4.646" Type="JumpEnd" />
+        <Point X="5.421" Y="4.646" Type="JumpStart" />
+        <Point X="5.254" Y="4.646" Type="JumpEnd" />
+        <Point X="1.911" Y="4.646" />
+        <Point X="1.911" Y="5.5" />
+        <Point X="1.75" Y="5.5" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.201" Y="0.11" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAIAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Peekback.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ListedPeekbackStack&lt;Elem&gt;" Collapsed="true">
+    <Position X="4.75" Y="5.5" Width="1.5" />
+    <InheritanceLine Type="PeekbackStack&lt;Elem&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="8.75" Y="4.57" />
+        <Point X="8.829" Y="4.57" />
+        <Point X="8.829" Y="4.807" />
+        <Point X="7.833" Y="4.807" Type="JumpStart" />
+        <Point X="7.667" Y="4.807" Type="JumpEnd" />
+        <Point X="5.5" Y="4.807" />
+        <Point X="5.5" Y="5.5" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="-0.714" Y="0.101" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <InheritanceLine Type="StackOnList&lt;Elem&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="5.25" Y="3.191" />
+        <Point X="5.337" Y="3.274" />
+        <Point X="5.337" Y="5.5" />
+        <Point X="5.5" Y="5.5" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.69" Y="0.15" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAEAAQAAAAAAAA=</HashCode>
+      <FileName>Peekback.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StackOnList&lt;Elem&gt;" Collapsed="true">
+    <Position X="4.5" Y="2.5" Width="1.5" />
+    <InheritanceLine Type="Stack&lt;StackElem&gt;" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="1.312" />
+        <Point X="5.25" Y="2.376" />
+        <Point X="5.25" Y="2.376" />
+        <Point X="5.25" Y="2.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAIAEAIgCAAAAAAAQAAAIAAIAAAA=</HashCode>
+      <FileName>StackOnList.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stack&lt;StackElem&gt;" Collapsed="true">
+    <Position X="4.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACIAAAIgCAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Stack.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

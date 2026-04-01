@@ -1,4 +1,4 @@
-#include <iostream.>
+#include <iostream>
 
 #include "CyclicList.h"
 #include "List.h"

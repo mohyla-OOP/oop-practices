@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AIterator&lt;T&gt;">
+    <Position X="2.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgQAAAAAAAAAAgAAAAAAAgEAAAAAg=</HashCode>
+      <FileName>AItor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Array&lt;T&gt;" Collapsed="true">
+    <Position X="4.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAACAAAAIAAAQAAAAEAAABAAAAgAAIAAAA=</HashCode>
+      <FileName>Array.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Array&lt;T[n]&gt;" Collapsed="true">
+    <Position X="6" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAASAAAAIAAAAAAAAEAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Array.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence&lt;T&gt;">
+    <Position X="0.5" Y="1" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Sequence&lt;T&gt;::BadSeq" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Sequence.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEAAABAAABBAAAAEAIIAAAQCAAEAAAAAAAEgAAMAAAA=</HashCode>
+      <FileName>Sequence.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iterator&lt;T, Container&gt;">
+    <Position X="2" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAIAAgAAgQAAAACAAAAAgAAAAAAAgFAQAAAA=</HashCode>
+      <FileName>Itor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Complex" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAEAAAAAJABAAAgECAAAAAACAgAAAAAAA=</HashCode>
+      <FileName>Complex.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Typedef Name="CPFR" Collapsed="true">
+    <Position X="5.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Complex.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PFR" Collapsed="true">
+    <Position X="7" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Complex.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

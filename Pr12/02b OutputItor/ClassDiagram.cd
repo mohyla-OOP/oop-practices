@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AIterator&lt;T&gt;" Collapsed="true">
+    <Position X="3.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgQAAAAAAAAAAgAAAAAAAgEAAAAAg=</HashCode>
+      <FileName>AItor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Array&lt;T&gt;" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAACAAAAIAAAQAAAAEAAABAAQAgAAIAAAA=</HashCode>
+      <FileName>Array.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Array&lt;T[n]&gt;" Collapsed="true">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAASAAAAIAAAAAAAAEAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Array.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iterator&lt;T, Container&gt;">
+    <Position X="4.75" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAIAAgAAgQAAAACAAAAAgAAAAAAAgFAQAAAA=</HashCode>
+      <FileName>Itor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iterator&lt;T, List&lt;T&gt;&gt;">
+    <Position X="2" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAIAAgAAgQAAAACAAAAAgAAAAAAAgFAAAAAA=</HashCode>
+      <FileName>Itor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OutIterator&lt;T, Container&gt;">
+    <Position X="7.25" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAgAAgQAAAACAAAAAggAAAAAAgBAQAAAA=</HashCode>
+      <FileName>Itor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="List&lt;T&gt;" Collapsed="true">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAgAAAAAAAAAAAAAAAQAEAAAAAAAI=</HashCode>
+      <FileName>List.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Map&lt;T, U&gt;" Collapsed="true">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABCAAAAAAIAAAAAAAAEAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Map.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AOutIterator&lt;T&gt;">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgQAAAAABAAAAgAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>OutItor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence&lt;T&gt;" Collapsed="true">
+    <Position X="10.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAABAAABBAAAAEAIIAAAQCAAEAAAAAAAEgAAMAAAA=</HashCode>
+      <FileName>Sequence.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASet&lt;T&gt;" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAIAAAAAAAAEAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Set.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Set&lt;T&gt;" Collapsed="true">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACABAAAAIAAAAAAAAEAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Set.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MultiSet&lt;T&gt;" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAIAAAAAAAAEAAAAEAAAAAAACAAA=</HashCode>
+      <FileName>Set.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Complex" Collapsed="true">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAEAAAAAJABAAAgECAAAAAACAgAAAAAAA=</HashCode>
+      <FileName>Complex.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Pair&lt;T, U&gt;" Collapsed="true">
+    <Position X="9" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAgAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Map.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="CPFR" Collapsed="true">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Complex.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PFR" Collapsed="true">
+    <Position X="6" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Complex.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

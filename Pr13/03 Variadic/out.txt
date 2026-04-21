@@ -1,0 +1,7 @@
+m1 =-7:double
+m21 =-42.6:long double
+ss =-3:int
+s  =2:int
+s2 =-2147483648:int
+s4 =a:char
+s4 =b:char
